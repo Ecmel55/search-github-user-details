@@ -3,24 +3,20 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  pad: 0;
+  padding: 0;
 }
 
-html,body {
+body {
   background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
   color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
-  height: 100%;
+  min-height: 100vh ;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-}
-
-.container{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
 }
 
 .user-form{
@@ -60,7 +56,7 @@ html,body {
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(255, 255, 255, 0.1);
   padding: 2rem;
-  border-radius: 50px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,23 +123,14 @@ html,body {
 
 
 @media (max-width: 500px) {
-  body,html{
-    height: 100%;
-  }
-  .container{
-    height: 100%;
-
-  }
   .card {
     flex-direction: column;
     align-items: center;
     justify-content: center;
  
   }
-
   .search-box {
     max-width: 350px;
-  
   }
 }
 
